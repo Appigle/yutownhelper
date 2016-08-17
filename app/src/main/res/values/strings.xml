@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">YutownHelper</string>
+    <string name="tanmu_str1">来自火星的水友：抢到了&#34;55开&#34;的红包¥111.00元</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_fragment_with_view_pager">FragmentWithViewPagerActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="sss">注意：控制的图片为资源而不是背景，即android:src="
+        @drawable/logo"，而非android:background="@drawable/logo"，我就笨笨地犯了这个低级错误，导致错怪人家scaleType不起作用。程序中动态加载图片也类似，如：应该imgView.setImageResource(R.drawable.*);
+        而非imgView.setBackgroundResource(R.drawable.*);"
+        android:textSize="22sp</string>
+</resources>

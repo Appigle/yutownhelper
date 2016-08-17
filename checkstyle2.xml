@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE module PUBLIC
+    "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
+    "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+
+
+    <!--
+    重复代码的检查，超过30行就认为重复，UTF-8格式 本检查一定要放在"TreeWalker"节点前，否则在
+    Checkclipse中会无法使用。(在ant下可以)
+    -->
+    <module name="StrictDuplicateCode">
+        <property name="min" value="30" />
+    </module>
+
+    <!-- 文件长度不超过1500行 -->
+    <module name="FileLength">
+        <property name="max" value="1500" />
+    </module>
+
+    <module name="TreeWalker">
+
+        <!-- javadoc的检查 -->
+        <!-- 检查所有的interface和class -->
+        <module name="JavadocType" />
+
+        <!-- 命名方面的检查，它们都使用了Sun官方定的规则。 -->
+        <!-- 局部的final变量，包括catch中的参数的检查 -->
+        <module name="LocalFinalVariableName" />
+        <!-- 局部的非final型的变量，包括catch中的参数的检查 -->
+        <module name="LocalVariableName" />
+        <!-- 包名的检查（只允许小写字母） -->
+        <module name="PackageName">
+            <property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$" />
+        </module>
+        <!-- 仅仅是static型的变量（不包括static final型）的检查 -->
+        <module name="StaticVariableName" />
+        <!-- 类型(Class或Interface)名的检查 -->
+        <module name="TypeName" />
+        <!-- 非static型变量的检查 -->
+        <module name="MemberName" />
+        <!-- 方法名的检查 -->
+        <module name="MethodName" />
+        <!-- 方法的参数名 -->
+        <module name="ParameterName " />
+        <!-- 常量名的检查，忽略log -->
+        <module name="ConstantName">
+            <!-- Allow "log" as a constant - don't force LOG -->
+            <property name="format" value="^log$|^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$" />
+        </module>
+
+        <!-- import方面的检查 -->
+        <!-- import中避免星号"*" -->
+        <module name="AvoidStarImport" />
+        <!--
+            没用的import检查，比如：1.没有被用到2.重复的3.import java.lang的4.import
+            与该类在同一个package的
+        -->
+        <module name="UnusedImports" />
+
+
+        <!-- 长度方面的检查， 不知道为什么下面这个忽略@see的不起作用，所以先注释掉 -->
+        <!-- <module name="LineLength">
+            <property name="max" value="120"/> -->
+        <!-- ignore rows starting with a * @see and long word-->
+        <!-- <property name="ignorePattern" value="^ *\* \@see *[^ ]+$"/>
+    </module>  -->
+
+        <!-- 方法不超过100行 -->
+        <module name="MethodLength">
+            <property name="tokens" value="METHOD_DEF" />
+            <property name="max" value="100" />
+        </module>
+        <!-- 方法的参数个数不超过6个。只所有有这么多参数，是因为Swing里面有可能就有这么长-->
+        <module name="ParameterNumber">
+            <property name="max" value="6" />
+            <property name="tokens" value="METHOD_DEF, CTOR_DEF" />
+        </module>
+
+        <!-- 空格检查  -->
+        <!-- 允许方法名后紧跟左边圆括号"(" -->
+        <module name="MethodParamPad" />
+        <!-- 在类型转换时，不允许左圆括号右边有空格，也不允许与右圆括号左边有空格 -->
+        <module name="TypecastParenPad" />
+
+        <!-- 关键字 -->
+        <!--
+            每个关键字都有正确的出现顺序。比如 public static final XXX 是对一个常量的声明。如果使用 static
+            public final 就是错误的
+        -->
+        <module name="ModifierOrder" />
+
+        <!-- 对区域的检查 -->
+        <!-- 不能出现空白区域 -->
+        <module name="EmptyBlock" />
+        <!-- 所有区域都要使用大括号。 -->
+        <module name="NeedBraces" />
+        <!-- 多余的括号 -->
+        <module name="AvoidNestedBlocks">
+            <property name="allowInSwitchCase" value="true" />
+        </module>
+
+        <!-- 编码方面的检查 -->
+        <!-- 不许出现空语句 -->
+        <module name="EmptyStatement" />
+        <!-- 每个类都实现了equals()和hashCode() -->
+        <module name="EqualsHashCode" />
+        <!-- 不许内部赋值 -->
+        <module name="InnerAssignment" />
+        <!-- 不能容忍魔法数,这里不检查了，因为Swing布局里面确实需要int，比如new Insets(5, 0, 5, 5)；还有double,比如new GridBagConstraints(0, 0, 1, 1, 0.1, 0.0 -->
+        <!--<module name="MagicNumber">
+            <property name="tokens" value="NUM_DOUBLE, NUM_FLOAT" />
+            <property name="ignoreNumbers" value="-1, 0, 0.5, 1"/>
+            <property name="ignoreHashCodeMethod" value="true"/>
+            <property name="ignoreAnnotation" value="true"/>
+        </module>-->
+        <!-- 循环控制变量不能被修改 -->
+        <module name="ModifiedControlVariable" />
+        <!-- 多余的throw -->
+        <module name="RedundantThrows" />
+        <!-- String的比较不能用!= 和 == -->
+        <module name="StringLiteralEquality" />
+        <!-- if最多嵌套3层 -->
+        <module name="NestedIfDepth">
+            <property name="max" value="3" />
+        </module>
+        <!-- try最多被嵌套2层 -->
+        <module name="NestedTryDepth">
+            <property name="max" value="2" />
+        </module>
+        <!-- clone方法必须调用了super.clone() -->
+        <module name="SuperClone" />
+        <!-- finalize 必须调用了super.finalize() -->
+        <module name="SuperFinalize" />
+        <!-- 确保一个类有package声明 -->
+        <module name="PackageDeclaration" />
+
+        <!--
+            根据 Sun 编码规范， class 或 interface 中的顺序如下： 1.class 声明。首先是 public,
+            然后是protected , 然后是 package level （不包括access modifier ） 最后是private .
+            (多个class放在一个java文件中的情况） 2.变量声明。 首先是 public, 然后是protected然后是 package
+            level （不包括access modifier ） 最后是private . (多个class放在一个java文件中的情况）
+            3.构造函数 4.方法
+        -->
+        <module name="DeclarationOrder" />
+        <!-- 不许对方法的参数赋值 -->
+        <module name="ParameterAssignment" />
+        <!-- 确保某个class 在被使用时都已经被初始化成默认值(对象是null,数字和字符是0,boolean 变量是false.) -->
+        <module name="ExplicitInitialization" />
+        <!-- 不许有同样内容的String，最多出现2次，忽略:空字符串 | "," | "(" | ")"-->
+        <module name="MultipleStringLiterals">
+            <property name="allowedDuplicates" value="2" />
+            <property name="ignoreStringsRegexp" value='^(("")|(", ")|("\("|"\)"))$' />
+        </module>
+        <!-- 同一行不能有多个声明 -->
+        <module name="MultipleVariableDeclarations" />
+        <!-- 不必要的圆括号(Unnecessary parentheses around identifier) -->
+        <module name="UnnecessaryParentheses" />
+
+        <!-- 各种量度 -->
+        <!-- 布尔表达式的复杂度，不超过3 -->
+        <module name="BooleanExpressionComplexity" />
+        <!-- 类数据的抽象耦合，不超过7。注释掉的原因是因为，在写Swing代码的时候确实有这么耦合 -->
+        <!-- <module name="ClassDataAbstractionCoupling" /> -->
+        <!-- 类的分散复杂度，不超过20。 注释掉的原因是因为，在写Swing代码的时候确实有这么扇出 -->
+        <!-- <module name="ClassFanOutComplexity" />  -->
+        <!-- 函数的分支复杂度，不超过10 -->
+        <module name="CyclomaticComplexity" />
+        <!-- NPath复杂度(NPath Complexity)，不超过200 -->
+        <module name="NPathComplexity" />
+
+        <!-- 杂项 -->
+        <!-- 禁止使用System.out.println -->
+        <module name="Regexp">
+            <property name="format" value="System\.out\.println" />
+            <property name="illegalPattern" value="true" />
+            <property name="ignoreComments" value="true" />
+        </module>
+
+        <!-- 不许使用main方法 -->
+        <module name="UncommentedMain" />
+        <!-- 检查并确保所有的常量中的L都是大写的。因为小写的字母l跟数字1太象了 -->
+        <module name="UpperEll" />
+        <!-- 检查数组类型的定义是String[] args，而不是String args[] -->
+        <module name="ArrayTypeStyle" />
+
+    </module>
+
+
+    <!-- 检查翻译文件     -->
+    <module name="Translation" />
+</module>

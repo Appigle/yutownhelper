@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="horizontal"
+    tools:context="com.chenley.an.yutownhelper.Activity.DateCalActivity">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_info01"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/black"
+        android:text="ActionBar显示自定义View"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

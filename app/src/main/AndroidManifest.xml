@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chenley.an.yutownhelper">
+
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 不是SDK需要的权限，是示例中的后台唤醒定位需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 需要运行时注册的权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity.PopwinUIActivity" />
+        <activity android:name=".Activity.SlideImageActivity" />
+        <activity android:name=".Activity.ShowTextViewActivity" />
+        <activity android:name=".Activity.ShowHuaDongHongbaoActivity" />
+        <activity android:name=".Activity.ScreenPrintActivity" />
+        <activity android:name=".Activity.ReboundActivity" />
+        <activity android:name=".Main2Activity" />
+        <!-- 使用系统自带的透明主题，需要Activity继承Activity，不能继承appcompatActivity,如果必须使用则需要自定义style -->
+        <activity
+            android:name=".Activity.TranslusentActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <!--
+             <activity android:name=".Activity.ActivityTranslusent"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        -->
+        <activity android:name=".Activity.ShoppingMallPageActivity" />
+        <activity android:name=".Activity.AmapGaodeLocationActivity" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="7ff52e3866078b8c725a432cbacf0c17" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".Activity.DateCalActivity" />
+        <activity android:name=".Activity.PbAct" />
+        <activity android:name=".Activity.CustomTextViewActivity" />
+        <activity android:name=".Activity.GetPackageInfoActivity" />
+        <activity android:name=".Main3Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.TestMenuActivity" />
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".Activity.FragmentAct.FragmentTestActivity" />
+        <activity android:name=".Activity.FragmentAct.FragmentWithViewPagerActivity" />
+        <activity android:name=".Activity.FragmentAct.TraditionalViewPagerAcvitity" />
+        <activity android:name=".Activity.FragmentAct.FragmentMainActivity" />
+        <activity android:name=".Activity.FragmentAct.FragmentANDViewPagerActivity" />
+        <activity android:name=".Activity.RegexTestActivity" />
+        <activity android:name=".Activity.ScreenChangeActivity" />
+        <activity android:name=".base.BaseActionBarActivity" />
+        <activity android:name=".Activity.ActionBarApiActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_goodsgrade"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_v_word"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:text="V"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/tv_grade_value"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="bottom"
+        android:inputType="number"
+        android:text="20"
+        android:lines="1"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_grade_word"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text=" 特权"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>

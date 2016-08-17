@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.chenley.an.yutownhelper.Activity.CustomTextViewActivity">
+
+    <com.chenley.an.yutownhelper.views.CustomGradeView
+        android:id="@+id/cs_grade"
+        android:layout_width="111dp"
+        android:layout_height="111dp"
+        android:layout_centerInParent="true"
+        android:background="#46aac3"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:grade_value="55" />
+
+    <Button
+        android:id="@+id/btn_changegrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cs_grade"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/cs_grade"
+        android:layout_marginBottom="52dp"
+        android:text="点击修改等级" />
+</RelativeLayout>

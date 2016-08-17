@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/bg_item"
+        android:id="@+id/rl_id"
+    android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/bg_item"
+        android:id="@+id/rl_uparea"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="166dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:riv_corner_radius_top_left="8dp"
+            app:riv_corner_radius_top_right="8dp"
+            android:id="@+id/iv_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/flower" />
+
+        <ImageView
+            android:id="@+id/iv_isover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/sidebar_default_head_icon" />
+
+        <ImageView
+            android:id="@+id/iv_winner"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/iv_isover"
+            android:scaleType="fitXY"
+            android:src="@drawable/sea" />
+
+        <ImageView
+            android:id="@+id/iv_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/emoji_1f60b" />
+       </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/rl_uparea"
+            android:background="@drawable/bg_product_item_bottom_ll"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp">
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="18 000"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_point"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:gravity="center_vertical"
+                android:text="积分"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/show_special"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:src="@drawable/flower" />
+        </LinearLayout>
+    </RelativeLayout>

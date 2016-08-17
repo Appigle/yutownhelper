@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gift_bag_bg" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_empty_hongbao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:id="@+id/ll_enpty_hongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gift_bag"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_close_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:padding="14dp"
+                android:src="@drawable/open_wefare_close_icon" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                app:riv_border_color="#f5b400"
+                app:riv_border_width="2dp"
+                app:riv_corner_radius="30dp"
+                android:id="@+id/riv_avatar"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/sidebar_default_head_icon" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="55开"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_whos_hongbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="大红包,给我的55e"
+                android:textColor="#96261E"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_content_hongbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="来晚一步，红包被领完了"
+                android:textColor="#FFE976"
+                android:textSize="14sp"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_open_hongbao"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="66dp"
+                android:background="@drawable/bg_yellow"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="8dp"
+                android:text="拆红包"
+                android:textColor="#F47904"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:visibility="gone" />
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:id="@+id/tv_getDetail_hongbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/gift_bag_arrow_yellow"
+                android:text="查看领取详情"
+                android:textColor="#FFE976"
+                android:textSize="14sp"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+    android:id="@+id/rl_topbar"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="#353636"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_toptitlebar_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/back_icon"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="标题栏"
+        android:textColor="#FDCF00"
+        android:textSize="16sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_toptitlebar_more"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_launch_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

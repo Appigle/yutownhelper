@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/id_fragment_title"
+        android:name="com.chenley.an.yutownhelper.Fragment.TitleFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        tools:layout="@layout/fragment_title" />
+
+    <FrameLayout
+        android:id="@+id/id_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_fragment_title"
+        android:background="#337e7871">
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/btnjump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="jump" />
+
+        <Button
+            android:id="@+id/btnjump2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="54dp"
+            android:text="ModelFragment_show" />
+
+        <Button
+            android:id="@+id/DialogFragmentshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="54dp"
+            android:layout_marginLeft="88dp"
+            android:text="DialogFragmentshow" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/id_ly_bottombar"
+        layout="@layout/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
