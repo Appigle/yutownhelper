@@ -44,7 +44,7 @@ public class Main3Activity extends AppCompatActivity {
         superView.setAdapter(mAdapter);
     }
 
-   /**
+    /**
      * 初始化列表数据
      */
     private void initData() {
@@ -55,6 +55,10 @@ public class Main3Activity extends AppCompatActivity {
         itemList.add("正则表达式Test");
         itemList.add("横竖屏切换生命周期展示");
         itemList.add("ActionBarApiActivity");
+        itemList.add("NotificationDemosActivity");
+        itemList.add("垂直滚动循环消息");
+        itemList.add("ScrollView嵌套RecyclerView的显示及滑动");
+        itemList.add("RxJava知识点");
         mAdapter.addItems(itemList);
     }
 }

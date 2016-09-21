@@ -3,16 +3,21 @@ package com.chenley.an.yutownhelper.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.chenley.an.yutownhelper.Activity.ActionBarApiActivity;
+import com.chenley.an.yutownhelper.Activity.CircleShowInfoActivity;
 import com.chenley.an.yutownhelper.Activity.FragmentAct.FragmentTestActivity;
 import com.chenley.an.yutownhelper.Activity.FragmentAct.FragmentWithViewPagerActivity;
+import com.chenley.an.yutownhelper.Activity.NotificationDemosActivity;
 import com.chenley.an.yutownhelper.Activity.RegexTestActivity;
+import com.chenley.an.yutownhelper.Activity.RxJavaKnowledgeActivity;
 import com.chenley.an.yutownhelper.Activity.ScreenChangeActivity;
+import com.chenley.an.yutownhelper.Activity.ScrollViewAndRecyclerViewQuestionActivity;
 import com.chenley.an.yutownhelper.Activity.TestMenuActivity;
 import com.chenley.an.yutownhelper.MainActivity;
 import com.chenley.an.yutownhelper.R;
@@ -73,6 +78,7 @@ public class SuperViewAdapter extends BaseRecyclerViewAdapter<String> {
                 tvItem.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        Log.i(TAG, "onClick: itemData-->"+itemData);
                         if (itemData.equals("测试菜单显示Activity")) {
                             mContext.startActivity(new Intent(mContext, TestMenuActivity.class));
                         }else if(itemData.equals("进入到下一个MainActivity")){
@@ -87,6 +93,14 @@ public class SuperViewAdapter extends BaseRecyclerViewAdapter<String> {
                             mContext.startActivity(new Intent(mContext, ScreenChangeActivity.class));
                         }else if(itemData.equals("ActionBarApiActivity")){
                             mContext.startActivity(new Intent(mContext, ActionBarApiActivity.class));
+                        }else if(itemData.equals("NotificationDemosActivity")){
+                            mContext.startActivity(new Intent(mContext, NotificationDemosActivity.class));
+                        }else if(itemData.equals("垂直滚动循环消息")){
+                            mContext.startActivity(new Intent(mContext, CircleShowInfoActivity.class));
+                        }else if(itemData.equals("ScrollView嵌套RecyclerView的显示及滑动")){
+                            mContext.startActivity(new Intent(mContext, ScrollViewAndRecyclerViewQuestionActivity.class));
+                        }else if(itemData.equals("RxJava知识点")){
+                            mContext.startActivity(new Intent(mContext, RxJavaKnowledgeActivity.class));
                         }
                     }
                 });

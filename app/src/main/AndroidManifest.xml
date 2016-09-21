@@ -87,7 +87,11 @@
         <activity android:name=".Activity.RegexTestActivity" />
         <activity android:name=".Activity.ScreenChangeActivity" />
         <activity android:name=".base.BaseActionBarActivity" />
-        <activity android:name=".Activity.ActionBarApiActivity"></activity>
+        <activity android:name=".Activity.ActionBarApiActivity" />
+        <activity android:name=".Activity.NotificationDemosActivity" />
+        <activity android:name=".Activity.CircleShowInfoActivity" />
+        <activity android:name=".Activity.ScrollViewAndRecyclerViewQuestionActivity"></activity>
+        <activity android:name=".Activity.RxJavaKnowledgeActivity"></activity>
     </application>
 
 </manifest>
