@@ -1,4 +1,4 @@
-package com.chenley.an.yutownhelper.Activity;
+package com.chenley.an.yutownhelper.activity;
 
 import android.os.Bundle;
 import android.os.Handler;

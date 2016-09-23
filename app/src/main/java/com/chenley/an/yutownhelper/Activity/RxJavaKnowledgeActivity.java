@@ -1,5 +1,8 @@
-package com.chenley.an.yutownhelper.Activity;
+package com.chenley.an.yutownhelper.activity;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
@@ -32,7 +35,7 @@ import rx.schedulers.Schedulers;
  * Why & What is modified:
  */
 public class RxJavaKnowledgeActivity extends BaseActionBarActivity {
-    private static final String TAG = "RxJavaKnowledgeActivity==";
+    private final String TAG = this.getClass().getSimpleName() + "@@";
     @Bind(R.id.btn_observable)
     Button btnObservable;
     @Bind(R.id.iv_rxjavademo)
@@ -81,31 +84,33 @@ public class RxJavaKnowledgeActivity extends BaseActionBarActivity {
      * 使用RxJava模式设置ImageView的背景显示
      */
     private void setImageViewWithRxJava() {
-        final int drawableRes = R.drawable.cloudsea;
         Observable.create(new Observable.OnSubscribe<Drawable>() {
             @Override
             public void call(Subscriber<? super Drawable> subscriber) {
-                Drawable drawable = getTheme().getDrawable(drawableRes);
-                subscriber.onNext(drawable);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.cloudsea);
+                Drawable d  = new BitmapDrawable(getResources(),bitmap);
+                subscriber.onNext(d);
                 subscriber.onCompleted();
             }
         })
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<Drawable>() {
-            @Override
-            public void onCompleted() {
-                Log.d(TAG, "onCompleted() called with: " + "");
-            }
-            @Override
-            public void onError(Throwable e) {
-                Log.d(TAG, "onError() called with: " + "e = [" + e + "]");
-            }
-            @Override
-            public void onNext(Drawable drawable) {
-                ivRxjavademo.setImageDrawable(drawable);
-            }
-        });
+                    @Override
+                    public void onCompleted() {
+                        Log.d(TAG, "onCompleted() called with: " + "");
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        Log.d(TAG, "onError() called with: " + "e = [" + e + "]");
+                    }
+
+                    @Override
+                    public void onNext(Drawable drawable) {
+                        ivRxjavademo.setImageDrawable(drawable);
+                    }
+                });
     }
 
     /**

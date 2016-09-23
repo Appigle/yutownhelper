@@ -1,4 +1,4 @@
-package com.chenley.an.yutownhelper.Activity.FragmentAct;
+package com.chenley.an.yutownhelper.activity.FragmentAct;
 
 import android.content.Intent;
 import android.os.Bundle;

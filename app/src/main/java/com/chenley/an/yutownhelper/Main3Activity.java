@@ -59,6 +59,7 @@ public class Main3Activity extends AppCompatActivity {
         itemList.add("垂直滚动循环消息");
         itemList.add("ScrollView嵌套RecyclerView的显示及滑动");
         itemList.add("RxJava知识点");
+        itemList.add("基础算法知识");
         mAdapter.addItems(itemList);
     }
 }

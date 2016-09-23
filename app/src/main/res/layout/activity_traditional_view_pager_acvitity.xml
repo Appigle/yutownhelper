@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.chenley.an.yutownhelper.Activity.FragmentAct.TraditionalViewPagerAcvitity">
+    tools:context="com.chenley.an.yutownhelper.activity.FragmentAct.TraditionalViewPagerAcvitity">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"

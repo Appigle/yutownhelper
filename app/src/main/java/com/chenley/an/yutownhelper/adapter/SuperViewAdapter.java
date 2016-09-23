@@ -9,16 +9,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.chenley.an.yutownhelper.Activity.ActionBarApiActivity;
-import com.chenley.an.yutownhelper.Activity.CircleShowInfoActivity;
-import com.chenley.an.yutownhelper.Activity.FragmentAct.FragmentTestActivity;
-import com.chenley.an.yutownhelper.Activity.FragmentAct.FragmentWithViewPagerActivity;
-import com.chenley.an.yutownhelper.Activity.NotificationDemosActivity;
-import com.chenley.an.yutownhelper.Activity.RegexTestActivity;
-import com.chenley.an.yutownhelper.Activity.RxJavaKnowledgeActivity;
-import com.chenley.an.yutownhelper.Activity.ScreenChangeActivity;
-import com.chenley.an.yutownhelper.Activity.ScrollViewAndRecyclerViewQuestionActivity;
-import com.chenley.an.yutownhelper.Activity.TestMenuActivity;
+import com.chenley.an.yutownhelper.activity.ActionBarApiActivity;
+import com.chenley.an.yutownhelper.activity.AlgorithmActivity;
+import com.chenley.an.yutownhelper.activity.CircleShowInfoActivity;
+import com.chenley.an.yutownhelper.activity.FragmentAct.FragmentTestActivity;
+import com.chenley.an.yutownhelper.activity.FragmentAct.FragmentWithViewPagerActivity;
+import com.chenley.an.yutownhelper.activity.NotificationDemosActivity;
+import com.chenley.an.yutownhelper.activity.RegexTestActivity;
+import com.chenley.an.yutownhelper.activity.RxJavaKnowledgeActivity;
+import com.chenley.an.yutownhelper.activity.ScreenChangeActivity;
+import com.chenley.an.yutownhelper.activity.ScrollViewAndRecyclerViewQuestionActivity;
+import com.chenley.an.yutownhelper.activity.TestMenuActivity;
 import com.chenley.an.yutownhelper.MainActivity;
 import com.chenley.an.yutownhelper.R;
 
@@ -101,6 +102,8 @@ public class SuperViewAdapter extends BaseRecyclerViewAdapter<String> {
                             mContext.startActivity(new Intent(mContext, ScrollViewAndRecyclerViewQuestionActivity.class));
                         }else if(itemData.equals("RxJava知识点")){
                             mContext.startActivity(new Intent(mContext, RxJavaKnowledgeActivity.class));
+                        }else if(itemData.equals("基础算法知识")){
+                            mContext.startActivity(new Intent(mContext, AlgorithmActivity.class));
                         }
                     }
                 });

@@ -42,23 +42,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".Activity.PopwinUIActivity" />
-        <activity android:name=".Activity.SlideImageActivity" />
-        <activity android:name=".Activity.ShowTextViewActivity" />
-        <activity android:name=".Activity.ShowHuaDongHongbaoActivity" />
-        <activity android:name=".Activity.ScreenPrintActivity" />
-        <activity android:name=".Activity.ReboundActivity" />
+        <activity android:name=".activity.PopwinUIActivity" />
+        <activity android:name=".activity.SlideImageActivity" />
+        <activity android:name=".activity.ShowTextViewActivity" />
+        <activity android:name=".activity.ShowHuaDongHongbaoActivity" />
+        <activity android:name=".activity.ScreenPrintActivity" />
+        <activity android:name=".activity.ReboundActivity" />
         <activity android:name=".Main2Activity" />
         <!-- 使用系统自带的透明主题，需要Activity继承Activity，不能继承appcompatActivity,如果必须使用则需要自定义style -->
         <activity
-            android:name=".Activity.TranslusentActivity"
+            android:name=".activity.TranslusentActivity"
             android:theme="@android:style/Theme.Translucent" />
         <!--
              <activity android:name=".Activity.ActivityTranslusent"
             android:theme="@android:style/Theme.Translucent"></activity>
         -->
-        <activity android:name=".Activity.ShoppingMallPageActivity" />
-        <activity android:name=".Activity.AmapGaodeLocationActivity" />
+        <activity android:name=".activity.ShoppingMallPageActivity" />
+        <activity android:name=".activity.AmapGaodeLocationActivity" />
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
@@ -66,10 +66,10 @@
         <!-- 定位需要的服务 -->
         <service android:name="com.amap.api.location.APSService" />
 
-        <activity android:name=".Activity.DateCalActivity" />
-        <activity android:name=".Activity.PbAct" />
-        <activity android:name=".Activity.CustomTextViewActivity" />
-        <activity android:name=".Activity.GetPackageInfoActivity" />
+        <activity android:name=".activity.DateCalActivity" />
+        <activity android:name=".activity.PbAct" />
+        <activity android:name=".activity.CustomTextViewActivity" />
+        <activity android:name=".activity.GetPackageInfoActivity" />
         <activity android:name=".Main3Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -77,21 +77,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.TestMenuActivity" />
+        <activity android:name=".activity.TestMenuActivity" />
         <activity android:name=".Main4Activity" />
-        <activity android:name=".Activity.FragmentAct.FragmentTestActivity" />
-        <activity android:name=".Activity.FragmentAct.FragmentWithViewPagerActivity" />
-        <activity android:name=".Activity.FragmentAct.TraditionalViewPagerAcvitity" />
-        <activity android:name=".Activity.FragmentAct.FragmentMainActivity" />
-        <activity android:name=".Activity.FragmentAct.FragmentANDViewPagerActivity" />
-        <activity android:name=".Activity.RegexTestActivity" />
-        <activity android:name=".Activity.ScreenChangeActivity" />
+        <activity android:name=".activity.FragmentAct.FragmentTestActivity" />
+        <activity android:name=".activity.FragmentAct.FragmentWithViewPagerActivity" />
+        <activity android:name=".activity.FragmentAct.TraditionalViewPagerAcvitity" />
+        <activity android:name=".activity.FragmentAct.FragmentMainActivity" />
+        <activity android:name=".activity.FragmentAct.FragmentANDViewPagerActivity" />
+        <activity android:name=".activity.RegexTestActivity" />
+        <activity android:name=".activity.ScreenChangeActivity" />
         <activity android:name=".base.BaseActionBarActivity" />
-        <activity android:name=".Activity.ActionBarApiActivity" />
-        <activity android:name=".Activity.NotificationDemosActivity" />
-        <activity android:name=".Activity.CircleShowInfoActivity" />
-        <activity android:name=".Activity.ScrollViewAndRecyclerViewQuestionActivity"></activity>
-        <activity android:name=".Activity.RxJavaKnowledgeActivity"></activity>
+        <activity android:name=".activity.ActionBarApiActivity" />
+        <activity android:name=".activity.NotificationDemosActivity" />
+        <activity android:name=".activity.CircleShowInfoActivity" />
+        <activity android:name=".activity.ScrollViewAndRecyclerViewQuestionActivity" />
+        <activity android:name=".activity.RxJavaKnowledgeActivity" />
+        <activity android:name=".activity.AlgorithmActivity"></activity>
     </application>
 
 </manifest>

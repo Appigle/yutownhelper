@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_algorithm_info">所需辅助空间最多：归并排序 所需辅助空间最少：堆排序 平均速度最快：快速排序 不稳定：快速排序，希尔排序，堆排序。</string>
+    <string name="tv_origin_list">需要排列的数据：{49, 38, 65, 97, 76, 13, 27, 49, 78, 34, 12, 64, 5, 4, 62, 99, 98, 54, 56, 17, 18, 23, 34, 15, 35, 25, 53, 51}</string>
+    <string name="tv_algorithm_shellSort">希尔排序：:</string>
+    <string name="tv_algorithm_heapSort">堆排序：</string>
+    <string name="tv_algorithm_bubbleSort">冒泡排序：</string>
+    <string name="tv_algorithm_quickSort">快速排序：</string>
+    <string name="tv_algorithm_mergingSort">归并排序：</string>
+    <string name="tv_algorithm_radixSort">基数排序：</string>
+    <string name="tv_algorithm_result">排序结果：</string>
+    <string name="avatar">头像</string>
+    <string name="img_show">图片展示</string>
+    <string name="rotate_screen_show_lifecycle">旋转屏幕什么周期显示</string>
+    <string name="btn1">Btn1</string>
+    <string name="btn2">Btn2</string>
+    <string name="btn4">Btn4</string>
+    <string name="btn_screenprint">获取屏幕截图</string>
+    <string name="tv_info01">ActionBar显示自定义View</string>
+</resources>

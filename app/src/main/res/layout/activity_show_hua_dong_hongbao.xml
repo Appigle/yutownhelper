@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F0665C"
     android:orientation="vertical"
-    tools:context="com.chenley.an.yutownhelper.Activity.ShowHuaDongHongbaoActivity">
+    tools:context="com.chenley.an.yutownhelper.activity.ShowHuaDongHongbaoActivity">
 
     <RelativeLayout
         android:id="@+id/tanmu_container"

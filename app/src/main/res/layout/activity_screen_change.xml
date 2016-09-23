@@ -7,21 +7,22 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.chenley.an.yutownhelper.Activity.ScreenChangeActivity">
+    tools:context="com.chenley.an.yutownhelper.activity.ScreenChangeActivity">
 
     <ImageView
-        android:src="@drawable/forest"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:contentDescription="@string/img_show"
+        android:src="@drawable/forest" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="旋转屏幕什么周期显示"
-        android:id="@+id/textView2"
         android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/rotate_screen_show_lifecycle" />
 </RelativeLayout>

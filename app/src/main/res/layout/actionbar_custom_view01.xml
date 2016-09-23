@@ -5,14 +5,14 @@
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
     android:orientation="horizontal"
-    tools:context="com.chenley.an.yutownhelper.Activity.DateCalActivity">
+    tools:context="com.chenley.an.yutownhelper.activity.DateCalActivity">
     <TextView
         android:gravity="center"
         android:id="@+id/tv_info01"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:background="@color/black"
-        android:text="ActionBar显示自定义View"
+        android:text="@string/tv_info01"
         android:textColor="@color/white"
         android:textSize="20sp" />
 </LinearLayout>

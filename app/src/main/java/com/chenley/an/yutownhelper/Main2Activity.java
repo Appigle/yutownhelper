@@ -9,13 +9,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.chenley.an.yutownhelper.Activity.AmapGaodeLocationActivity;
-import com.chenley.an.yutownhelper.Activity.AnimationActivity;
-import com.chenley.an.yutownhelper.Activity.CustomTextViewActivity;
-import com.chenley.an.yutownhelper.Activity.DateCalActivity;
-import com.chenley.an.yutownhelper.Activity.PbAct;
-import com.chenley.an.yutownhelper.Activity.ShoppingMallPageActivity;
-import com.chenley.an.yutownhelper.Activity.TranslusentActivity;
+import com.chenley.an.yutownhelper.activity.AmapGaodeLocationActivity;
+import com.chenley.an.yutownhelper.activity.AnimationActivity;
+import com.chenley.an.yutownhelper.activity.CustomTextViewActivity;
+import com.chenley.an.yutownhelper.activity.DateCalActivity;
+import com.chenley.an.yutownhelper.activity.PbAct;
+import com.chenley.an.yutownhelper.activity.ShoppingMallPageActivity;
+import com.chenley.an.yutownhelper.activity.TranslusentActivity;
 import com.orhanobut.logger.Logger;
 
 import butterknife.ButterKnife;

@@ -1,4 +1,4 @@
-package com.chenley.an.yutownhelper.Activity;
+package com.chenley.an.yutownhelper.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -27,6 +27,7 @@ public class ActionBarApiActivity extends BaseActionBarActivity {
             int actionBarHeight = TypedValue.complexToDimensionPixelSize(tv.data, mContext.getResources().getDisplayMetrics());
             Log.i(TAG, "calActionBarHeight: actionBarHeight=" + actionBarHeight);
         }
+        Log.i(TAG, "calActionBarHeight: ");
     }
 
     @Override

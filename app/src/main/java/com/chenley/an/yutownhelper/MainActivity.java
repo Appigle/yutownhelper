@@ -9,12 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.chenley.an.yutownhelper.Activity.PopwinUIActivity;
-import com.chenley.an.yutownhelper.Activity.ReboundActivity;
-import com.chenley.an.yutownhelper.Activity.ScreenPrintActivity;
-import com.chenley.an.yutownhelper.Activity.ShowHuaDongHongbaoActivity;
-import com.chenley.an.yutownhelper.Activity.ShowTextViewActivity;
-import com.chenley.an.yutownhelper.Activity.SlideImageActivity;
+import com.chenley.an.yutownhelper.activity.PopwinUIActivity;
+import com.chenley.an.yutownhelper.activity.ReboundActivity;
+import com.chenley.an.yutownhelper.activity.ScreenPrintActivity;
+import com.chenley.an.yutownhelper.activity.ShowHuaDongHongbaoActivity;
+import com.chenley.an.yutownhelper.activity.ShowTextViewActivity;
+import com.chenley.an.yutownhelper.activity.SlideImageActivity;
 import com.chenley.an.yutownhelper.bean.PayId_bean;
 import com.google.gson.Gson;
 

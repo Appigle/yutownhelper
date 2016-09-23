@@ -1,4 +1,4 @@
-package com.chenley.an.yutownhelper.Activity.FragmentAct;
+package com.chenley.an.yutownhelper.activity.FragmentAct;
 
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;

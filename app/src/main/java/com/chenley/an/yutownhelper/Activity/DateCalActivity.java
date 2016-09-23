@@ -1,4 +1,4 @@
-package com.chenley.an.yutownhelper.Activity;
+package com.chenley.an.yutownhelper.activity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;

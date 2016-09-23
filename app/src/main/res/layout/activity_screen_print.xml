@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:background="#6738e49f"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.chenley.an.yutownhelper.Activity.ScreenPrintActivity">
+    tools:context="com.chenley.an.yutownhelper.activity.ScreenPrintActivity">
 
     <ImageView
         android:background="#ff2bf4"
@@ -21,7 +21,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="获取屏幕截图"
+        android:text="@string/btn_screenprint"
         android:id="@+id/btn_screenprint"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
