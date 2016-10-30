@@ -54,7 +54,6 @@ task checkstyle(type: Checkstyle) {
     source 'src'
     include '**/*.java'
     exclude '**/gen/**'
-    exclude '**/R.java'
     exclude '**/BuildConfig.java'
     configFile new File(rootDir, "checkstyle.xml")
     // empty classpath

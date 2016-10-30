@@ -61,7 +61,6 @@ public class ShowHuaDongHongbaoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_hua_dong_hongbao);
         ButterKnife.bind(this);
-//        recycleView = (SuperRecyclerView) findViewById(R.id.recycle_view);
         mGridLayoutManager = new GridLayoutManager(this, 1, GridLayoutManager.HORIZONTAL, false);
         mLinearLayoutManager = new LinearLayoutManager(this);
         mHongbaoAdapter = new HongbaoAdapter(this);

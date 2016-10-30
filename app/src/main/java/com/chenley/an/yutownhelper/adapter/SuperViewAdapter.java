@@ -8,25 +8,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import com.chenley.an.yutownhelper.MainActivity;
+import com.chenley.an.yutownhelper.R;
 import com.chenley.an.yutownhelper.activity.ActionBarApiActivity;
 import com.chenley.an.yutownhelper.activity.AlgorithmActivity;
 import com.chenley.an.yutownhelper.activity.CircleShowInfoActivity;
+import com.chenley.an.yutownhelper.activity.CoordinatorLayoutSampleActivity;
 import com.chenley.an.yutownhelper.activity.FragmentAct.FragmentTestActivity;
 import com.chenley.an.yutownhelper.activity.FragmentAct.FragmentWithViewPagerActivity;
 import com.chenley.an.yutownhelper.activity.NotificationDemosActivity;
 import com.chenley.an.yutownhelper.activity.RegexTestActivity;
 import com.chenley.an.yutownhelper.activity.RxJavaKnowledgeActivity;
+import com.chenley.an.yutownhelper.activity.SameNameQuestionActivity;
 import com.chenley.an.yutownhelper.activity.ScreenChangeActivity;
 import com.chenley.an.yutownhelper.activity.ScrollViewAndRecyclerViewQuestionActivity;
 import com.chenley.an.yutownhelper.activity.TestMenuActivity;
-import com.chenley.an.yutownhelper.MainActivity;
-import com.chenley.an.yutownhelper.R;
-
+import com.chenley.an.yutownhelper.activity.WebViewDemo;
+import com.chenley.an.yutownhelper.mvp.MvpSampleActivity;
 import java.lang.ref.WeakReference;
-
-import butterknife.Bind;
-import butterknife.ButterKnife;
 
 /**
  * Author:    Chenley
@@ -104,6 +105,14 @@ public class SuperViewAdapter extends BaseRecyclerViewAdapter<String> {
                             mContext.startActivity(new Intent(mContext, RxJavaKnowledgeActivity.class));
                         }else if(itemData.equals("基础算法知识")){
                             mContext.startActivity(new Intent(mContext, AlgorithmActivity.class));
+                        }else if(itemData.equals("MVP IN ANDROID")){
+                            mContext.startActivity(new Intent(mContext, MvpSampleActivity.class));
+                        }else if(itemData.equals("一个类调用继承父类和实现接口中的同名方法问题")){
+                            mContext.startActivity(new Intent(mContext, SameNameQuestionActivity.class));
+                        }else if(itemData.equals("WebViewDemo")){
+                            mContext.startActivity(new Intent(mContext, WebViewDemo.class));
+                        }else if(itemData.equals("CoordinatorLayoutSample")){
+                            mContext.startActivity(new Intent(mContext, CoordinatorLayoutSampleActivity.class));
                         }
                     }
                 });

@@ -60,6 +60,11 @@ public class Main3Activity extends AppCompatActivity {
         itemList.add("ScrollView嵌套RecyclerView的显示及滑动");
         itemList.add("RxJava知识点");
         itemList.add("基础算法知识");
+        itemList.add("MVP IN ANDROID");
+        itemList.add("一个类调用继承父类和实现接口中的同名方法问题");
+        itemList.add("AIDLsample");
+        itemList.add("WebViewDemo");
+        itemList.add("CoordinatorLayoutSample");
         mAdapter.addItems(itemList);
     }
 }
