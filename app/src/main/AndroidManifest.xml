@@ -98,8 +98,11 @@
     <activity android:name=".activity.WebViewDemo"/>
     <activity android:name=".activity.EventBusActivity">
     </activity>
-    <activity android:name=".activity.CoordinatorLayoutSampleActivity"
+    <activity
+        android:name=".activity.CoordinatorLayoutSampleActivity"
         android:theme="@style/ToolBarStyle">
+    </activity>
+    <activity android:name=".activity.DragLayoutActivity">
     </activity>
   </application>
 

@@ -48,6 +48,7 @@ public class Main3Activity extends AppCompatActivity {
      * 初始化列表数据
      */
     private void initData() {
+        itemList.add("DragLayoutActivity模仿京东阻尼滑动效果");
         itemList.add("进入到下一个MainActivity");
         itemList.add("测试菜单显示Activity");
         itemList.add("Fragment测试Activity");

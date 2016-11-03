@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_drag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chenley.an.yutownhelper.activity.DragLayoutActivity"
+    >
+  <com.chenley.an.yutownhelper.views.DragLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:id="@+id/dragLayout"
+      >
+    <FrameLayout
+        android:id="@+id/fragment_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <FrameLayout
+        android:id="@+id/fragment_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+  </com.chenley.an.yutownhelper.views.DragLayout>
+
+</LinearLayout>

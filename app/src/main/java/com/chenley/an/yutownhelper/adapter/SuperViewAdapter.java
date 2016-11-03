@@ -16,6 +16,7 @@ import com.chenley.an.yutownhelper.activity.ActionBarApiActivity;
 import com.chenley.an.yutownhelper.activity.AlgorithmActivity;
 import com.chenley.an.yutownhelper.activity.CircleShowInfoActivity;
 import com.chenley.an.yutownhelper.activity.CoordinatorLayoutSampleActivity;
+import com.chenley.an.yutownhelper.activity.DragLayoutActivity;
 import com.chenley.an.yutownhelper.activity.FragmentAct.FragmentTestActivity;
 import com.chenley.an.yutownhelper.activity.FragmentAct.FragmentWithViewPagerActivity;
 import com.chenley.an.yutownhelper.activity.NotificationDemosActivity;
@@ -113,6 +114,8 @@ public class SuperViewAdapter extends BaseRecyclerViewAdapter<String> {
                             mContext.startActivity(new Intent(mContext, WebViewDemo.class));
                         }else if(itemData.equals("CoordinatorLayoutSample")){
                             mContext.startActivity(new Intent(mContext, CoordinatorLayoutSampleActivity.class));
+                        }else if(itemData.equals("DragLayoutActivity模仿京东阻尼滑动效果")){
+                            mContext.startActivity(new Intent(mContext, DragLayoutActivity.class));
                         }
                     }
                 });
