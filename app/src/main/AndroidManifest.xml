@@ -108,6 +108,12 @@
     </activity>
     <activity android:name=".activity.KeyIntJsonPaseActivity">
     </activity>
+    <activity android:name=".activity.StackOverFlowErrorSampleActivity"/>
+    <activity
+        android:name=".activity.RxJavaWithMvpSampleActivity"
+        android:label="@string/title_activity_rx_java_with_mvp_sample"
+        android:theme="@style/AppTheme.NoActionBar">
+    </activity>
   </application>
 
 </manifest>

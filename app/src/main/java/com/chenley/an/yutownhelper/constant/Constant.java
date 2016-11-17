@@ -1,16 +1,16 @@
-package com.chenley.an.yutownhelper.iinterface;
+package com.chenley.an.yutownhelper.constant;
 
 /**
  * Author:    Chenley
  * Version    V2.0
- * Date:      2016/9/24
+ * Date:      2016/11/17
  * Description:
  * Modification    History:
  * Date         	Author        		Version        	Description
  * ------------------------------------------------------------------
- * 2016/9/24         Chenley             2.0                2.0
+ * 2016/11/17         Chenley             2.0                2.0
  * Why & What is modified:
  */
-public interface ISameNameInterface {
-    void outPut();
+public class Constant {
+  public static final String JUHE_BASEURL = "http://op.juhe.cn";
 }

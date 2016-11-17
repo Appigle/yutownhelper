@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import com.chenley.an.yutownhelper.Fragment.DragFragmentOne;
-import com.chenley.an.yutownhelper.Fragment.ProductH5Fragment;
+import com.chenley.an.yutownhelper.fragment.DragFragmentOne;
+import com.chenley.an.yutownhelper.fragment.ProductH5Fragment;
 import com.chenley.an.yutownhelper.R;
 import com.chenley.an.yutownhelper.views.DragLayout;
 

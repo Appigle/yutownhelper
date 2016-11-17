@@ -1,62 +1,65 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-   <style name="ToolBarStyle" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="ToolBarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
   <style name="ToolBarStyle2" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/transparent</item>
-        <item name="colorPrimaryDark">@color/transparent</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/transparent</item>
+    <item name="colorPrimaryDark">@color/transparent</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
 
-    <style name="Theme.Transparent" parent="@style/Theme.AppCompat">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:backgroundDimEnabled">false</item>
-    </style>
-    <!--indeterminateOnly:表示进度值是否精确，true表示不精确，false表示精确-->
-    <style name="cusHorizontalPbpressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
-        <item name="android:progressDrawable">@drawable/cus_pbpressbar</item>
-        <item name="android:thumb">@drawable/circleyellow</item>
-        <item name="android:maxHeight">26dip</item>
-        <item name="android:minHeight">26dip</item>
-    </style>
+  <style name="Theme.Transparent" parent="@style/Theme.AppCompat">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+  <!--indeterminateOnly:表示进度值是否精确，true表示不精确，false表示精确-->
+  <style name="cusHorizontalPbpressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+    <item name="android:progressDrawable">@drawable/cus_pbpressbar</item>
+    <item name="android:thumb">@drawable/circleyellow</item>
+    <item name="android:maxHeight">26dip</item>
+    <item name="android:minHeight">26dip</item>
+  </style>
 
-    <style name="wrapViewStyle">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
-    </style>
+  <style name="wrapViewStyle">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+  </style>
 
-    <style name="btn_normal_style" parent="wrapViewStyle">
-        <item name="android:background">@drawable/bg_btn</item>
-        <item name="android:padding">4dp</item>
-    </style>
+  <style name="btn_normal_style" parent="wrapViewStyle">
+    <item name="android:background">@drawable/bg_btn</item>
+    <item name="android:padding">4dp</item>
+  </style>
 
-    <style name="FullscreenTheme" parent="AppTheme">
-        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
-        <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:windowBackground">@null</item>
-        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
-        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
-    </style>
+  <style name="FullscreenTheme" parent="AppTheme">
+    <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <item name="android:windowBackground">@null</item>
+    <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+    <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+  </style>
 
-    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
-        <item name="android:background">@color/black_overlay</item>
-    </style>
+  <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+    <item name="android:background">@color/black_overlay</item>
+  </style>
+
   <style name="style_countdown">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
@@ -83,5 +86,14 @@
     <item name="android:textColor">@android:color/white</item>
     <item name="android:textSize">14sp</item>
   </style>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
 </resources>

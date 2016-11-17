@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-import com.chenley.an.yutownhelper.Assist.SameNameQuestion;
+import com.chenley.an.yutownhelper.assist.SameNameQuestion;
 import com.chenley.an.yutownhelper.R;
 
 import butterknife.Bind;

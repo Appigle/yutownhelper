@@ -21,3 +21,4 @@
 16. NotificationDemosActivity;
 17. ActionBarApiActivity;
 18. 横竖屏切换生命周期展示;
+19. 添加StackOverFlowError展示和OOM产生方法，查看手机系统信息及单个APP可用内存查看；

@@ -1,4 +1,4 @@
-package com.chenley.an.yutownhelper.Fragment;
+package com.chenley.an.yutownhelper.fragment;
 
 import android.app.Activity;
 import android.app.Dialog;

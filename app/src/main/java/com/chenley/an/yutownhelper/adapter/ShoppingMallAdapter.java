@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.chenley.an.yutownhelper.R;
-import com.chenley.an.yutownhelper.viewHolder.ShoppingMallViewHolder;
+import com.chenley.an.yutownhelper.viewholder.ShoppingMallViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;

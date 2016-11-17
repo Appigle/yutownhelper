@@ -1,8 +1,8 @@
-package com.chenley.an.yutownhelper.Assist;
+package com.chenley.an.yutownhelper.assist;
 
 import android.util.Log;
 
-import com.chenley.an.yutownhelper.IInterface.ISameNameInterface;
+import com.chenley.an.yutownhelper.iinterface.ISameNameInterface;
 
 /**
  * Author:    Chenley

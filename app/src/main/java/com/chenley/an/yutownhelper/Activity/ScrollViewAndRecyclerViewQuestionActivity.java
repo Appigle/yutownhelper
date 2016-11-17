@@ -3,7 +3,7 @@ package com.chenley.an.yutownhelper.activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
-import com.chenley.an.yutownhelper.Fragment.FullyExpandedFragment;
+import com.chenley.an.yutownhelper.fragment.FullyExpandedFragment;
 import com.chenley.an.yutownhelper.R;
 import com.chenley.an.yutownhelper.base.BaseActionBarActivity;
 

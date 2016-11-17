@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+  <TextView
+      android:id="@+id/get_app_allowed_memery"
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hello World!"
+      />
+  <TextView
+      android:layout_marginTop="20dp"
+      android:layout_below="@id/get_app_allowed_memery"
+      android:id="@+id/stackoverflowerror"
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="运行StackOVerError方法"
+      />
+  <TextView
+      android:layout_marginTop="20dp"
+      android:layout_below="@id/get_app_allowed_memery"
+      android:id="@+id/oom_show"
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="运行OOMmethod方法"
+      />
+</RelativeLayout>

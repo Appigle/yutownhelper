@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#71a05bc4"
-    tools:context="com.chenley.an.yutownhelper.Fragment.Content2Fragment">
+    tools:context="com.chenley.an.yutownhelper.fragment.Content2Fragment">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

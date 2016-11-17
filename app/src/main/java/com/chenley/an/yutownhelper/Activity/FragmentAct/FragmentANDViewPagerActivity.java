@@ -10,10 +10,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.chenley.an.yutownhelper.Fragment.Content2Fragment;
-import com.chenley.an.yutownhelper.Fragment.Content3Fragment;
-import com.chenley.an.yutownhelper.Fragment.Content4Fragment;
-import com.chenley.an.yutownhelper.Fragment.ContentFragment;
+import com.chenley.an.yutownhelper.fragment.Content2Fragment;
+import com.chenley.an.yutownhelper.fragment.Content3Fragment;
+import com.chenley.an.yutownhelper.fragment.Content4Fragment;
+import com.chenley.an.yutownhelper.fragment.ContentFragment;
 import com.chenley.an.yutownhelper.R;
 
 import java.util.ArrayList;

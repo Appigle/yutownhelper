@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/id_fragment_title"
-        android:name="com.chenley.an.yutownhelper.Fragment.TitleFragment"
+        android:name="com.chenley.an.yutownhelper.fragment.TitleFragment"
         android:layout_width="fill_parent"
         android:layout_height="45dp"
         tools:layout="@layout/fragment_title" />

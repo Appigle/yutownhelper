@@ -11,10 +11,10 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.chenley.an.yutownhelper.Fragment.FragmentOne;
-import com.chenley.an.yutownhelper.Fragment.FragmentThree;
-import com.chenley.an.yutownhelper.Fragment.FragmentTwo;
-import com.chenley.an.yutownhelper.Fragment.ModelFragment;
+import com.chenley.an.yutownhelper.fragment.FragmentOne;
+import com.chenley.an.yutownhelper.fragment.FragmentThree;
+import com.chenley.an.yutownhelper.fragment.FragmentTwo;
+import com.chenley.an.yutownhelper.fragment.ModelFragment;
 import com.chenley.an.yutownhelper.R;
 
 import butterknife.Bind;

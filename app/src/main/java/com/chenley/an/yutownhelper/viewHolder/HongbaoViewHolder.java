@@ -1,4 +1,4 @@
-package com.chenley.an.yutownhelper.viewHolder;
+package com.chenley.an.yutownhelper.viewholder;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;

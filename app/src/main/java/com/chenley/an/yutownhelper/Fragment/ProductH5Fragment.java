@@ -1,4 +1,4 @@
-package com.chenley.an.yutownhelper.Fragment;
+package com.chenley.an.yutownhelper.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

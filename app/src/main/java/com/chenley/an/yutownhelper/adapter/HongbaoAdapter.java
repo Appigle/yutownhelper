@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.chenley.an.yutownhelper.R;
-import com.chenley.an.yutownhelper.viewHolder.HongbaoViewHolder;
+import com.chenley.an.yutownhelper.viewholder.HongbaoViewHolder;
 import com.orhanobut.logger.Logger;
 
 import java.util.ArrayList;
