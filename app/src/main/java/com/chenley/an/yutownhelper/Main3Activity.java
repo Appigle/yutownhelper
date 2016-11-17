@@ -48,7 +48,9 @@ public class Main3Activity extends AppCompatActivity {
      * 初始化列表数据
      */
     private void initData() {
+        itemList.add("KeyIntJsonBean异形JSON解析");
         itemList.add("DragLayoutActivity模仿京东阻尼滑动效果");
+        itemList.add("CountDownViewActivity倒计时自定义View");
         itemList.add("进入到下一个MainActivity");
         itemList.add("测试菜单显示Activity");
         itemList.add("Fragment测试Activity");

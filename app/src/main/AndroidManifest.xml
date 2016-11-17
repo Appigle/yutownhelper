@@ -104,6 +104,10 @@
     </activity>
     <activity android:name=".activity.DragLayoutActivity">
     </activity>
+    <activity android:name=".activity.CountDownViewActivity">
+    </activity>
+    <activity android:name=".activity.KeyIntJsonPaseActivity">
+    </activity>
   </application>
 
 </manifest>

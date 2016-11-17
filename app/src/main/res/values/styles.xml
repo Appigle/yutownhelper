@@ -57,4 +57,31 @@
     <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
         <item name="android:background">@color/black_overlay</item>
     </style>
+  <style name="style_countdown">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:text">00</item>
+    <item name="android:textColor">#646464</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:paddingTop">3dp</item>
+    <item name="android:paddingBottom">3dp</item>
+    <item name="android:paddingLeft">2dp</item>
+    <item name="android:paddingRight">2dp</item>
+    <item name="android:background">@drawable/radius_3dp_bg</item>
+  </style>
+
+
+  <style name="style_countdown_dot">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:paddingLeft">2dp</item>
+    <item name="android:paddingRight">2dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textSize">14sp</item>
+  </style>
+
 </resources>

@@ -16,9 +16,11 @@ import com.chenley.an.yutownhelper.activity.ActionBarApiActivity;
 import com.chenley.an.yutownhelper.activity.AlgorithmActivity;
 import com.chenley.an.yutownhelper.activity.CircleShowInfoActivity;
 import com.chenley.an.yutownhelper.activity.CoordinatorLayoutSampleActivity;
+import com.chenley.an.yutownhelper.activity.CountDownViewActivity;
 import com.chenley.an.yutownhelper.activity.DragLayoutActivity;
 import com.chenley.an.yutownhelper.activity.FragmentAct.FragmentTestActivity;
 import com.chenley.an.yutownhelper.activity.FragmentAct.FragmentWithViewPagerActivity;
+import com.chenley.an.yutownhelper.activity.KeyIntJsonPaseActivity;
 import com.chenley.an.yutownhelper.activity.NotificationDemosActivity;
 import com.chenley.an.yutownhelper.activity.RegexTestActivity;
 import com.chenley.an.yutownhelper.activity.RxJavaKnowledgeActivity;
@@ -84,6 +86,10 @@ public class SuperViewAdapter extends BaseRecyclerViewAdapter<String> {
                         Log.i(TAG, "onClick: itemData-->"+itemData);
                         if (itemData.equals("测试菜单显示Activity")) {
                             mContext.startActivity(new Intent(mContext, TestMenuActivity.class));
+                        }else if(itemData.equals("CountDownViewActivity倒计时自定义View")){
+                            mContext.startActivity(new Intent(mContext, CountDownViewActivity.class));
+                        }else if(itemData.equals("KeyIntJsonBean异形JSON解析")){
+                            mContext.startActivity(new Intent(mContext, KeyIntJsonPaseActivity.class));
                         }else if(itemData.equals("进入到下一个MainActivity")){
                             mContext.startActivity(new Intent(mContext, MainActivity.class));
                         }else if(itemData.equals("Fragment测试Activity")){

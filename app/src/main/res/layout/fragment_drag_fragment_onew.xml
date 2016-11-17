@@ -12,4 +12,5 @@
       android:paddingTop="22dp"
       android:text="@string/long_string"
       />
+
 </com.chenley.an.yutownhelper.views.DragScrollView>

@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="CustomGradeView">
-        <attr name="grade_value" format="string" />
-    </declare-styleable>
+  <declare-styleable name="CustomGradeView">
+    <attr format="string" name="grade_value"/>
+  </declare-styleable>
 
-    <!-- Declare custom theme attributes that allow changing which styles are
-         used for button bars depending on the API level.
-         ?android:attr/buttonBarStyle is new as of API 11 so this is
-         necessary to support previous API levels. -->
-    <declare-styleable name="ButtonBarContainerTheme">
-        <attr name="metaButtonBarStyle" format="reference" />
-        <attr name="metaButtonBarButtonStyle" format="reference" />
-    </declare-styleable>
+  <!-- Declare custom theme attributes that allow changing which styles are
+       used for button bars depending on the API level.
+       ?android:attr/buttonBarStyle is new as of API 11 so this is
+       necessary to support previous API levels. -->
+  <declare-styleable name="ButtonBarContainerTheme">
+    <attr format="reference" name="metaButtonBarStyle"/>
+    <attr format="reference" name="metaButtonBarButtonStyle"/>
+  </declare-styleable>
 
+  <declare-styleable name="CountDownView">
+    <attr format="color" name="viewBg"/>
+    <attr format="color" name="cellBgColor"/>
+    <attr format="color" name="cellTextColor"/>
+    <attr format="color" name="TextColor"/>
+    <attr format="dimension" name="TextSize"/>
+    <attr format="dimension" name="cellTextSize"/>
+  </declare-styleable>
 </resources>
